@@ -1,0 +1,87 @@
+nd<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>User Name*</label>
+                 <label class="validation-error hide" id="userNameValidationError">Required</label>
+                 <input type="text" name="userName" id="userName">
+                
+                </div>
+         <div>
+            <label>Position</label>
+            <input type="text" name="position" id="position">
+         </div>
+         <div>
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone">
+         </div>
+         <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+         </div>
+         <div>
+            <label>Password</label>
+            <input type="password" name="password" id="password"> 
+        </div>
+        <div>
+            <label>Confirm password</label>
+            <input type="password" name="cpassword" id="cpassword">
+        </div>
+        <div class="form-action-buttons">
+            <input type="submit" value="Submit">
+        </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>password</th>
+                            <th>cpassword</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+<script src="crud.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
